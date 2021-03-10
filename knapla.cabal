@@ -9,9 +9,9 @@ version:        0.1.0.0
 description:    Please see the README on GitHub at <https://github.com/githubuser/knapla#readme>
 homepage:       https://github.com/githubuser/knapla#readme
 bug-reports:    https://github.com/githubuser/knapla/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2021 Author name here
+author:         Stan Drozd
+maintainer:     drozdziak1@gmail.com
+copyright:      2021 Stan Drozd
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
@@ -21,10 +21,11 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/knapla
+  location: https://github.com/drozdziak1/knapla
 
 library
   exposed-modules:
+      Box
       Lib
   other-modules:
       Paths_knapla
