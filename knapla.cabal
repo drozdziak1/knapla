@@ -7,8 +7,8 @@ cabal-version: 1.12
 name:           knapla
 version:        0.1.0.0
 description:    Please see the README on GitHub at <https://github.com/githubuser/knapla#readme>
-homepage:       https://github.com/githubuser/knapla#readme
-bug-reports:    https://github.com/githubuser/knapla/issues
+homepage:       https://github.com/drozdziak1/knapla#readme
+bug-reports:    https://github.com/drozdziak1/knapla/issues
 author:         Stan Drozd
 maintainer:     drozdziak1@gmail.com
 copyright:      2021 Stan Drozd
@@ -32,7 +32,8 @@ library
   hs-source-dirs:
       src
   build-depends:
-      base >=4.7 && <5
+      GLUT
+    , base >=4.7 && <5
   default-language: Haskell2010
 
 executable knapla-exe
@@ -43,7 +44,8 @@ executable knapla-exe
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      GLUT
+    , base >=4.7 && <5
     , knapla
   default-language: Haskell2010
 
@@ -56,6 +58,7 @@ test-suite knapla-test
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      GLUT
+    , base >=4.7 && <5
     , knapla
   default-language: Haskell2010
